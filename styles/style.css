@@ -147,6 +147,92 @@ main {
 
 /* Features section styles */
 
+.features-section {
+    display: flex;
+    padding-top: 100px;
+    gap: 100px;
+}
+
+
+
+.feature-title {
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0 25px;
+    border-left: 5px solid #FF900E;
+    margin-left: 2px;
+}
+
+.feature-para {
+    color: #727272;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 20px 0 30px;
+}
+
+.feature-card {
+    padding: 30px 32px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card-title {
+    color: #131313;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.feature-card-para {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.features-img{
+    position: relative;
+}
+
+
+.ten-year-batch {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 45px 42px;
+    width: 340px;
+    text-align: center;
+}
+
+.ten-year-batch>h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.ten-year-batch>p {
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+}
+
 /* Facts section styles */
 
 .facts {
@@ -309,20 +395,24 @@ main {
 /* tablet and medium devices */
 
 @media screen and (min-width:576px)and (max-width:960px) {
-    .teams-container ,.Sponsors-img-container{
+
+    .teams-container,
+    .Sponsors-img-container {
         flex-direction: column;
     }
 
     .teams-img-container img {
         width: 100%;
     }
-    
+
 }
 
 /* responsive facts styles */
 /* mobile devices */
 @media screen and (max-width:576px) {
-    .facts-cards-container {
+
+    .facts-cards-container,
+    .features-section {
         flex-direction: column;
         gap: 20px;
         padding: 50px 0;
@@ -334,16 +424,26 @@ main {
         padding: 0 20px;
         margin: 50px 0 0;
     }
-    .Sponsors-img-container{
+
+    .Sponsors-img-container {
         flex-direction: column;
-        
+
 
     }
+
     /* .Sponsors-img-container > img{
  
        padding: 20px;
     } */
-    .Sponsors{
+    .Sponsors {
         padding: 0 20px;
+    }
+
+    .features-img {
+        width: 100%;
+    }
+
+    .features-img img {
+        width: 100%;
     }
 }
